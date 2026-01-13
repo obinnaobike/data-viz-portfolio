@@ -605,7 +605,6 @@ main {
     border-radius: 4px 4px 0 0;
     margin-bottom: var(--spacing-xs);
     transition: height 0.5s ease;
-    cursor: pointer;
 }
 
 .chart-bar-column:hover {
