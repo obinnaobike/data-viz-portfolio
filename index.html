@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Data Visualization Portfolio - User-centered civic data analysis">
+    <title>Data Visualization Portfolio | Obinna Obike</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Data Visualization Portfolio</h1>
+                <p class="subtitle">User-Centered Design for Civic Data Analysis</p>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro container">
+            <h2>About This Portfolio</h2>
+            <p>Welcome! This portfolio showcases three data visualization samples designed with user-centered principles. Each visualization demonstrates my ability to transform complex civic data into clear, accessible, and actionable insights for diverse audiences.</p>
+            <div class="design-principles">
+                <h3>Design Principles Applied</h3>
+                <ul>
+                    <li><strong>Clarity:</strong> Simple, focused visualizations that answer specific questions</li>
+                    <li><strong>Accessibility:</strong> WCAG 2.1 AA compliant color contrast, ARIA labels, keyboard navigation</li>
+                    <li><strong>Context:</strong> Clear titles, labels, and annotations to aid understanding</li>
+                    <li><strong>Progressive Disclosure:</strong> Key metrics highlighted, details available on interaction</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="samples">
+            <div class="container">
+                <h2>Work Samples</h2>
+                
+                <!-- Sample 1: Memphis Community Dashboard -->
+                <article class="sample" id="sample1">
+                    <div class="sample-header">
+                        <h3>Sample 1: Memphis Community Engagement Dashboard</h3>
+                        <span class="badge">Civic Metrics</span>
+                    </div>
+                    <p class="sample-description">
+                        <strong>Challenge:</strong> City officials need to monitor community engagement across multiple programs to allocate resources effectively.<br>
+                        <strong>Solution:</strong> An at-a-glance dashboard showing year-over-year trends with clear status indicators.
+                    </p>
+                    <div class="viz-container" aria-label="Community engagement metrics dashboard">
+                        <div class="dashboard">
+                            <div class="metric-card positive" role="region" aria-label="Community meetings attendance">
+                                <div class="metric-icon">👥</div>
+                                <div class="metric-content">
+                                    <h4>Community Meetings</h4>
+                                    <div class="metric-value">2,847</div>
+                                    <div class="metric-change positive" aria-label="12% increase from last year">
+                                        <span class="arrow">↑</span> 12% vs. Last Year
+                                    </div>
+                                    <div class="metric-bar">
+                                        <div class="metric-bar-fill" style="width: 85%;" aria-label="85% of annual goal"></div>
+                                    </div>
+                                    <small>Target: 3,350 attendees</small>
+                                </div>
+                            </div>
+
+                            <div class="metric-card positive" role="region" aria-label="Volunteer participation">
+                                <div class="metric-icon">🤝</div>
+                                <div class="metric-content">
+                                    <h4>Volunteer Hours</h4>
+                                    <div class="metric-value">18,240</div>
+                                    <div class="metric-change positive" aria-label="23% increase from last year">
+                                        <span class="arrow">↑</span> 23% vs. Last Year
+                                    </div>
+                                    <div class="metric-bar">
+                                        <div class="metric-bar-fill" style="width: 91%;" aria-label="91% of annual goal"></div>
+                                    </div>
+                                    <small>Target: 20,000 hours</small>
+                                </div>
+                            </div>
+
+                            <div class="metric-card warning" role="region" aria-label="Survey response rate">
+                                <div class="metric-icon">📊</div>
+                                <div class="metric-content">
+                                    <h4>Survey Responses</h4>
+                                    <div class="metric-value">1,456</div>
+                                    <div class="metric-change warning" aria-label="5% decrease from last year">
+                                        <span class="arrow">↓</span> 5% vs. Last Year
+                                    </div>
+                                    <div class="metric-bar warning">
+                                        <div class="metric-bar-fill" style="width: 58%;" aria-label="58% of annual goal"></div>
+                                    </div>
+                                    <small>Target: 2,500 responses</small>
+                                </div>
+                            </div>
+
+                            <div class="metric-card positive" role="region" aria-label="Social media reach">
+                                <div class="metric-icon">📱</div>
+                                <div class="metric-content">
+                                    <h4>Digital Reach</h4>
+                                    <div class="metric-value">45.2K</div>
+                                    <div class="metric-change positive" aria-label="34% increase from last year">
+                                        <span class="arrow">↑</span> 34% vs. Last Year
+                                    </div>
+                                    <div class="metric-bar">
+                                        <div class="metric-bar-fill" style="width: 113%;" aria-label="113% of annual goal - exceeded target"></div>
+                                    </div>
+                                    <small>Target: 40,000 people</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-notes">
+                        <h4>Design Decisions:</h4>
+                        <ul>
+                            <li>Color-coded cards (green/yellow) with icons for quick scanning - also includes text indicators for colorblind users</li>
+                            <li>Large numbers emphasize key metrics; percentage changes provide context</li>
+                            <li>Progress bars show goal completion at a glance</li>
+                            <li>High contrast ratios (5.2:1 minimum) meet WCAG AA standards</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Sample 2: Education Access -->
+                <article class="sample" id="sample2">
+                    <div class="sample-header">
+                        <h3>Sample 2: Memphis Schools - Enrollment & Resource Distribution</h3>
+                        <span class="badge">Education Analytics</span>
+                    </div>
+                    <p class="sample-description">
+                        <strong>Challenge:</strong> District administrators need to understand enrollment trends and resource allocation across schools to identify equity gaps.<br>
+                        <strong>Solution:</strong> A comparative visualization showing student-to-resource ratios with clear regional breakdowns.
+                    </p>
+                    <div class="viz-container" aria-label="School enrollment and resource distribution comparison">
+                        <div class="comparison-chart">
+                            <div class="chart-header">
+                                <h4>Student Enrollment by District (2024-2025)</h4>
+                                <p class="chart-subtitle">Comparing enrollment, teacher ratios, and computer access</p>
+                            </div>
+                            <div class="comparison-grid">
+                                <div class="comparison-row">
+                                    <div class="district-label">
+                                        <strong>North Memphis</strong>
+                                        <small>8 schools</small>
+                                    </div>
+                                    <div class="district-metrics">
+                                        <div class="metric-group">
+                                            <label>Enrollment</label>
+                                            <div class="bar-chart">
+                                                <div class="bar" style="width: 75%;" aria-label="4,230 students">
+                                                    <span class="bar-label">4,230</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="metric-group">
+                                            <label>Student:Teacher Ratio</label>
+                                            <div class="ratio-display ratio-high" aria-label="18 to 1 ratio, above target">18:1</div>
+                                        </div>
+                                        <div class="metric-group">
+                                            <label>Computers per 10 Students</label>
+                                            <div class="ratio-display ratio-low" aria-label="6 computers per 10 students, below target">6</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comparison-row">
+                                    <div class="district-label">
+                                        <strong>East Memphis</strong>
+                                        <small>6 schools</small>
+                                    </div>
+                                    <div class="district-metrics">
+                                        <div class="metric-group">
+                                            <label>Enrollment</label>
+                                            <div class="bar-chart">
+                                                <div class="bar" style="width: 60%;" aria-label="3,420 students">
+                                                    <span class="bar-label">3,420</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="metric-group">
+                                            <label>Student:Teacher Ratio</label>
+                                            <div class="ratio-display ratio-good" aria-label="14 to 1 ratio, meets target">14:1</div>
+                                        </div>
+                                        <div class="metric-group">
+                                            <label>Computers per 10 Students</label>
+                                            <div class="ratio-display ratio-good" aria-label="9 computers per 10 students, meets target">9</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comparison-row">
+                                    <div class="district-label">
+                                        <strong>South Memphis</strong>
+                                        <small>7 schools</small>
+                                    </div>
+                                    <div class="district-metrics">
+                                        <div class="metric-group">
+                                            <label>Enrollment</label>
+                                            <div class="bar-chart">
+                                                <div class="bar" style="width: 88%;" aria-label="5,020 students">
+                                                    <span class="bar-label">5,020</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="metric-group">
+                                            <label>Student:Teacher Ratio</label>
+                                            <div class="ratio-display ratio-high" aria-label="19 to 1 ratio, above target">19:1</div>
+                                        </div>
+                                        <div class="metric-group">
+                                            <label>Computers per 10 Students</label>
+                                            <div class="ratio-display ratio-low" aria-label="5 computers per 10 students, below target">5</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comparison-row">
+                                    <div class="district-label">
+                                        <strong>Midtown</strong>
+                                        <small>5 schools</small>
+                                    </div>
+                                    <div class="district-metrics">
+                                        <div class="metric-group">
+                                            <label>Enrollment</label>
+                                            <div class="bar-chart">
+                                                <div class="bar" style="width: 50%;" aria-label="2,845 students">
+                                                    <span class="bar-label">2,845</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="metric-group">
+                                            <label>Student:Teacher Ratio</label>
+                                            <div class="ratio-display ratio-good" aria-label="13 to 1 ratio, meets target">13:1</div>
+                                        </div>
+                                        <div class="metric-group">
+                                            <label>Computers per 10 Students</label>
+                                            <div class="ratio-display ratio-good" aria-label="10 computers per 10 students, exceeds target">10</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-legend">
+                                <div class="legend-item">
+                                    <span class="legend-color ratio-good"></span>
+                                    <span>Meets or exceeds target (≤15:1 ratio, ≥8 computers)</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color ratio-high"></span>
+                                    <span>Needs attention (>15:1 ratio or <8 computers)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-notes">
+                        <h4>Design Decisions:</h4>
+                        <ul>
+                            <li>Side-by-side comparison allows quick identification of equity gaps</li>
+                            <li>Consistent color coding (green = meets target, red = needs attention) with textual indicators</li>
+                            <li>Absolute numbers (enrollment) paired with ratios for full context</li>
+                            <li>Clear baseline indicators help stakeholders prioritize interventions</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Sample 3: Public Health -->
+                <article class="sample" id="sample3">
+                    <div class="sample-header">
+                        <h3>Sample 3: Memphis COVID-19 Vaccination Progress Tracker</h3>
+                        <span class="badge">Public Health</span>
+                    </div>
+                    <p class="sample-description">
+                        <strong>Challenge:</strong> Public health officials need to communicate vaccination progress to the community while identifying underserved demographics.<br>
+                        <strong>Solution:</strong> A multi-layered dashboard showing overall progress, demographic breakdowns, and temporal trends.
+                    </p>
+                    <div class="viz-container" aria-label="COVID-19 vaccination progress dashboard">
+                        <div class="health-dashboard">
+                            <div class="summary-section">
+                                <h4>Overall Vaccination Progress - Shelby County</h4>
+                                <div class="summary-stats">
+                                    <div class="stat-item" role="region" aria-label="Total doses administered">
+                                        <div class="stat-number">687,450</div>
+                                        <div class="stat-label">Total Doses</div>
+                                    </div>
+                                    <div class="stat-item" role="region" aria-label="Fully vaccinated population percentage">
+                                        <div class="stat-number">62.3%</div>
+                                        <div class="stat-label">Fully Vaccinated</div>
+                                    </div>
+                                    <div class="stat-item" role="region" aria-label="At least one dose percentage">
+                                        <div class="stat-number">71.8%</div>
+                                        <div class="stat-label">At Least One Dose</div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar-large" role="progressbar" aria-valuenow="71.8" aria-valuemin="0" aria-valuemax="100" aria-label="71.8% of population has received at least one dose">
+                                    <div class="progress-fill" style="width: 71.8%;">
+                                        <span class="progress-label">71.8%</span>
+                                    </div>
+                                </div>
+                                <p class="progress-note">Target: 75% for community immunity</p>
+                            </div>
+
+                            <div class="demographic-section">
+                                <h4>Vaccination by Age Group</h4>
+                                <div class="demographic-chart">
+                                    <div class="demo-bar" role="region" aria-label="Ages 65 plus: 89% vaccinated">
+                                        <div class="demo-label">
+                                            <strong>65+</strong>
+                                            <span class="demo-percent">89%</span>
+                                        </div>
+                                        <div class="demo-bar-track">
+                                            <div class="demo-bar-fill high" style="width: 89%;"></div>
+                                        </div>
+                                        <small>High priority group</small>
+                                    </div>
+                                    <div class="demo-bar" role="region" aria-label="Ages 50 to 64: 74% vaccinated">
+                                        <div class="demo-label">
+                                            <strong>50-64</strong>
+                                            <span class="demo-percent">74%</span>
+                                        </div>
+                                        <div class="demo-bar-track">
+                                            <div class="demo-bar-fill medium" style="width: 74%;"></div>
+                                        </div>
+                                        <small>On track</small>
+                                    </div>
+                                    <div class="demo-bar" role="region" aria-label="Ages 35 to 49: 68% vaccinated">
+                                        <div class="demo-label">
+                                            <strong>35-49</strong>
+                                            <span class="demo-percent">68%</span>
+                                        </div>
+                                        <div class="demo-bar-track">
+                                            <div class="demo-bar-fill medium" style="width: 68%;"></div>
+                                        </div>
+                                        <small>Approaching target</small>
+                                    </div>
+                                    <div class="demo-bar" role="region" aria-label="Ages 18 to 34: 56% vaccinated">
+                                        <div class="demo-label">
+                                            <strong>18-34</strong>
+                                            <span class="demo-percent">56%</span>
+                                        </div>
+                                        <div class="demo-bar-track">
+                                            <div class="demo-bar-fill low" style="width: 56%;"></div>
+                                        </div>
+                                        <small>Needs outreach</small>
+                                    </div>
+                                    <div class="demo-bar" role="region" aria-label="Ages 12 to 17: 51% vaccinated">
+                                        <div class="demo-label">
+                                            <strong>12-17</strong>
+                                            <span class="demo-percent">51%</span>
+                                        </div>
+                                        <div class="demo-bar-track">
+                                            <div class="demo-bar-fill low" style="width: 51%;"></div>
+                                        </div>
+                                        <small>Needs outreach</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-section">
+                                <h4>Monthly Vaccination Trend</h4>
+                                <div class="simple-line-chart" role="img" aria-label="Line chart showing monthly vaccination trend from January to June, with peak in March at 85,000 doses">
+                                    <div class="chart-bars">
+                                        <div class="chart-bar-item">
+                                            <div class="chart-bar-column" style="height: 50%;" title="January: 42,500 doses"></div>
+                                            <span class="chart-bar-label">Jan</span>
+                                        </div>
+                                        <div class="chart-bar-item">
+                                            <div class="chart-bar-column" style="height: 75%;" title="February: 63,800 doses"></div>
+                                            <span class="chart-bar-label">Feb</span>
+                                        </div>
+                                        <div class="chart-bar-item">
+                                            <div class="chart-bar-column" style="height: 100%;" title="March: 85,200 doses"></div>
+                                            <span class="chart-bar-label">Mar</span>
+                                        </div>
+                                        <div class="chart-bar-item">
+                                            <div class="chart-bar-column" style="height: 85%;" title="April: 72,400 doses"></div>
+                                            <span class="chart-bar-label">Apr</span>
+                                        </div>
+                                        <div class="chart-bar-item">
+                                            <div class="chart-bar-column" style="height: 60%;" title="May: 51,000 doses"></div>
+                                            <span class="chart-bar-label">May</span>
+                                        </div>
+                                        <div class="chart-bar-item">
+                                            <div class="chart-bar-column" style="height: 45%;" title="June: 38,200 doses"></div>
+                                            <span class="chart-bar-label">Jun</span>
+                                        </div>
+                                    </div>
+                                    <p class="chart-insight">📉 Declining trend indicates need for renewed outreach campaigns</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-notes">
+                        <h4>Design Decisions:</h4>
+                        <ul>
+                            <li>Hierarchy: Overall metrics first, then demographic details for progressive disclosure</li>
+                            <li>Color-blind friendly palette using intensity variations (dark to light shades)</li>
+                            <li>Contextual annotations ("Needs outreach") guide actionable insights</li>
+                            <li>Large text, high contrast, and clear labels ensure accessibility for all users</li>
+                            <li>Temporal trend shows patterns over time to inform campaign timing</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="methodology container">
+            <h2>User-Centered Design Methodology</h2>
+            <div class="methodology-grid">
+                <div class="method-item">
+                    <h3>1. User Research</h3>
+                    <p>Identify stakeholder needs, technical literacy, and decision-making context</p>
+                </div>
+                <div class="method-item">
+                    <h3>2. Data Simplification</h3>
+                    <p>Focus on key metrics that answer specific questions; avoid chart junk</p>
+                </div>
+                <div class="method-item">
+                    <h3>3. Accessibility First</h3>
+                    <p>WCAG compliance, screen reader support, keyboard navigation, colorblind-friendly palettes</p>
+                </div>
+                <div class="method-item">
+                    <h3>4. Iterative Testing</h3>
+                    <p>Test with actual users, gather feedback, refine based on comprehension and usability</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Obinna Obike | Data Visualization Portfolio for Innovate Memphis</p>
+            <p><small>All data shown is illustrative for demonstration purposes</small></p>
+        </div>
+    </footer>
+</body>
+</html>
